@@ -1,4 +1,4 @@
  const localapiurl = "http://localhost:3000"
- const liveapiurl = "https://event-management-backend-indol.vercel.app"
+ const liveapiurl = "https://event-management-system-uvxy.vercel.app"
 
-export const apiurl = localapiurl
+export const apiurl = liveapiurl
