@@ -22,7 +22,7 @@ ConnectDB();
 
 // Enable CORS with credentials for frontend
 app.use(cors({
-  origin: "http://localhost:5173",  // Update if frontend runs elsewhere
+  origin: ["http://localhost:5173", "https://event-management-system-omega-three.vercel.app"],  // Allow both local and Vercel frontend
   credentials: true
 }));
 

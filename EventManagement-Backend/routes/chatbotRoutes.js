@@ -63,10 +63,11 @@ const getMonthFromPrompt = (prompt) => {
 // Enhanced function to get comprehensive platform data
 const getPlatformData = async () => {
     try {
+        const backendUrl = "https://event-management-system-uvxy.vercel.app";
         const [expoResponse, usersResponse, feedbackResponse] = await Promise.allSettled([
-            axios.get("http://localhost:3000/api/expos"), // Updated endpoint
-            axios.get("http://localhost:3000/users"),   // If you have this endpoint
-            axios.get("http://localhost:3000/api/feedback") // If you have this endpoint
+            axios.get(`${backendUrl}/api/expos`), // Updated endpoint
+            axios.get(`${backendUrl}/users`),   // If you have this endpoint
+            axios.get(`${backendUrl}/api/feedback`) // If you have this endpoint
         ]);
 
         return {
