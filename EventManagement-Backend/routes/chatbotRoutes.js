@@ -328,7 +328,8 @@ Currently, we have ${events.length} events available. Would you like to know mor
 //         'platform', 'website', 'app', 'system', 'feature', 'login',
 //         'register', 'create', 'manage', 'search', 'filter'
 //     ];
-    
+
+
 //     const lower = prompt.toLowerCase();
 //     return platformKeywords.some(keyword => lower.includes(keyword));
 // }
