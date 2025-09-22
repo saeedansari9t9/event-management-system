@@ -6,11 +6,11 @@ import LoginPage from './pages/Auth/LoginPage.jsx'
 import PremiumPage from './pages/PremiumPage'
 import BlogPage from './pages/BlogPage'
 import ContactusPage from './pages/ContactusPage'
-import MainDashboard from './pages/dashboardpages/maindashboard';
 import ProfilePage from './pages/ProfilePage'
 import SettingPage from './pages/dashboardpages/SettingPage.jsx'
 import HelpPAge from './pages/dashboardpages/HelpPAge.jsx'
 import Dashboard from "./pages/dashboardpages/Dashboard.jsx";
+import MainDashboard from './pages/dashboardpages/MainDashboard.jsx';
 import SignupPage from "./pages/Auth/SignupPage.jsx"
 import { UserContext } from './context/UserContext'
 import UserPage from './pages/dashboardpages/Organizer/UserPage.jsx'
@@ -55,7 +55,7 @@ function App() {
 
     {
       path: '/dashboard',
-      element: user && user?.role !== "attendee" ? <MainDashboard /> : <Navigate to={'/'} />,
+      element: user && user?.role !== "attendee" ? <MainDashboard/> : <Navigate to={'/'} />,
       children: [
         { path: '/dashboard', element: <Dashboard /> },
         { path: 'profile', element: <ProfilePage /> },
