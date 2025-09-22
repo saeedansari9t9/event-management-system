@@ -6,7 +6,7 @@ import LoginPage from './pages/Auth/LoginPage.jsx'
 import PremiumPage from './pages/PremiumPage'
 import BlogPage from './pages/BlogPage'
 import ContactusPage from './pages/ContactusPage'
-import MainDashboard from './pages/maindashboard'
+import MainDashboard from './pages/dashboardpages/maindashboard';
 import ProfilePage from './pages/ProfilePage'
 import SettingPage from './pages/dashboardpages/SettingPage.jsx'
 import HelpPAge from './pages/dashboardpages/HelpPAge.jsx'
